@@ -1,0 +1,206 @@
+/*body{
+	background-color: #f8f2e8;
+}*/
+
+ 
+.navbar{
+	background-color: #4f6d7a;
+}
+
+.bg1{
+	background-color: #eeeeee;
+}
+.bg2{
+	background-color: #F5F5F5;
+}
+.strong.text-white{
+  color: #fff;
+}
+/*.a.text-white:hover{
+        color: #000;
+      }
+*/.footer{
+	color: black;
+	background-color: #cccccc;
+	text-align: justify;
+}
+.a.footer{
+	color: white;
+}
+
+.tweet-div:hover{
+	background-color: #eeeeee;
+}
+
+.content.tweet-div{
+	margin-bottom: 0.2rem;
+	/*text-align: justify;*/
+}
+
+img.tweet-large {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+
+img.tweet-large:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.section.threadheader{
+	padding-bottom: 20px;
+}
+
+.section.thread{
+	padding-top: 20px;
+}
+
+a.tweet{
+	color: #4a4a4a;
+}
+
+hr.card {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+
+}
+
+.card-footer-item{
+	padding: .60rem;
+}
+
+.fontawesome-button{
+	margin-bottom: 5px; 
+	margin-top: 3px; 
+	margin-right: 5px;
+}
+
+
+
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 115px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+
+.left-item{
+  float:left;
+  padding:auto;
+  margin:1px;
+}
+
+/*ol.method {
+   margin: 20px;
+   counter-reset: item;
+   list-style-type: none;
+}
+ol li.method:before {
+   content: 'Method ' counter(item, decimal) ': ';
+   counter-increment: item;
+}
+
+ul li.method:before {
+   content: 'Step ' counter(item, decimal) ': ';
+   counter-increment: item;
+}*/
+.text-white{
+  color: #fff;
+}
+.text-white:hover{
+  color: #4a4a4a;
+}
+.has-dropdown:hover{
+  color: #4a4a4a;
+}
+a{
+  color: #1B54AC;
+}
+/*
+     FILE ARCHIVED ON 11:44:24 May 26, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:36:59 Apr 01, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 48.508
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.065
+  RedisCDXSource: 1.485
+  esindex: 0.006
+  LoadShardBlock: 28.815 (3)
+  PetaboxLoader3.datanode: 120.866 (5)
+  CDXLines.iter: 15.814 (3)
+  load_resource: 448.335 (2)
+  PetaboxLoader3.resolve: 313.484 (2)
+*/
