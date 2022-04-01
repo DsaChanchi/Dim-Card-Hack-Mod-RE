@@ -1,0 +1,130 @@
+
+<!-- saved from url=(0059)http://mrblinky.net/digimon/vb/dimcardtool/dimcardtool.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><center><div style="position:relative;top:8px;width:800px;border-style:solid; border-width: 1px;border-radius:16px; padding:8px; text-align:left">
+<a href="https://ko-fi.com/D1D02EEDN" target="_blank" style="position:relative;left:700px;top:8px"><img height="24" style="border:0px;height:24px" src="./dimcardtool_files/kofi1.webp" border="0" alt="Buy Me a Coffee"></a>
+<h2 style="text-align: center">DIMcard tool Guide</h2>
+
+<p>Digimon DIMcards contain little flashchips that can be (re)programmed. 
+This tool was made for the purpose of customizing dimcards and requires a
+CH341A mini programmer to re-program DIMcards.
+
+</p><p>This tools programmer code is based on the AsProgrammer project by nofeletru
+<a href="https://github.com/nofeletru/UsbAsp-flash/">https://github.com/nofeletru/UsbAsp-flash/</a>
+
+</p><h3>INSTALLATION</h3>
+
+<p>There is no installer so all you have to do is unpack the zip file to a
+location of your choice. 
+</p><ul><li>If you want a shortcut on the start screen then right click the 
+DimCardTool.exe and choose pin to Start.
+
+</li><li>If you want a shortcut on your desktop to the tool then right click the
+DimCardTool.exe, choose 'copy to' and then choose 'Desktop (create shortcut)' to
+create a the shortcut on the desktop.
+</li></ul>
+<p>If this is the first time you use the CH341A mini programmer then the driver
+must be installed. The driver can be found in the driver folder.
+</p><ul><li>Connect the CH341A mini programmer to your computer and wait a little for
+Windows to detect it.
+</li><li>Go to Device Manager by pressing <b>Windows key + X</b> and then choose 
+<b>Device Manager</b>
+</li><li>if a suitable driver was already found by Windows, you will see a 
+<b>USB-EPP/I2C... CH341A</b> device under the <b>INTERFACE</b> section.
+</li><li> If you cant find the device then look for an <b>unknown device</b> with 
+exclamation mark in the list of devices. Right click it and choose update 
+driver. In the new window that opens choose 'browse my computer for driver 
+software' and browse to the folder where you unpacked the zip file and install
+the driver.
+</li></ul>
+<h3>USING THE TOOL</h3>
+<p>To start the tool click the DimCardTool.exe. A window like below will appear.
+</p><p style="text-align:center"><img src="./dimcardtool_files/screenshot.png">
+</p><p>The tool as 4 options:
+</p><ul>
+<li>Check DIMcard
+<p>
+Use this option to check the communication with the CH341A mini programmer
+and the DIMcard status. If the programmer is not found then check the USB 
+connection and/or (re)install the driver. If the DIMcard is invalid then 
+check it's inserted properly and check the wiring of the micro SD card module.
+  
+</p></li><li>Unlock DIMcard
+<p>
+Once a DIMcard is used on a Vital Bracelet, the DIMcard is linked to that
+Vital Bracelet and it can not be used again another Vital Bracelet.
+Use this option to remove the Vital Bracelet link so the DIMcard will be
+usable on another Vital Bracelet.
+
+</p></li><li>Backup DIMcard
+<p>
+Before you can customize a DIMcard, you will need to make a backup copy of
+the DIMcard. Use this option to save the original DIMcard contents to disk.
+</p><p>Note.<br>It is recommended to store a backup copy in a .zip file. So it
+doesn't get accidentally patched later on when working on customizing it.
+
+</p></li><li>Restore DIMcard
+<p>Use this option to load your customized file or your original copy onto
+the DIMcard. The process of erasing and re-programming the DIMcard chip
+will take several minutes.
+</p></li></ul>
+
+<h3>HARDWARE</h3>
+<p>For the hardware you need a CH341A mini programmer, a short micro SD card
+module with presoldered header pins and 6 pieces of 10cm long female to female
+jumper wires. These can be purchased from on-line shopping sites like
+Aliexpress, Ebay and Amazon.
+</p><ul>
+<li><p>The <a href="https://www.aliexpress.com/wholesale?SearchText=CH341A+programmer">
+CH341A mini programmer</a> is often sold with accessories. You do not
+need any of those. Only the base unit is required. It doesn't have to come
+with software either.
+</p></li><li><p><img src="./dimcardtool_files/sd-card-module.jpg" height="165" align="right">
+there are many <a href="https://www.aliexpress.com/wholesale?SearchText=micro+SD-Card+module">
+micro SD card modules</a> available. Make sure you get a short version (the 
+metal connector, not necessarily the circuit board) and that the pin header
+is soldered onto the module already (the pin header is the black bar with 
+pins sticking out).
+
+</p></li><li>To connect the micro SD card module to the programmer, 6 <a href="https://www.aliexpress.com/wholesale?SearchText=10cm+Female+to+female+jumper+wires">
+jumper wires</a> are needed. since both the pin headers on the programmer and 
+the micro SD card module are male. you'll need Female to Female jumper wires
+(Female to Female jumper wires can be identified by having no metal pins 
+sticking out of the black ends).
+</li></ul>
+<p>Note:
+</p><ul>
+When buying from Aliexpress, the cheaper items and / or free shipping offers
+usually takes 2-3 months to arrive but you can upgrade the shipping method to
+aliexpress standard shipping to reduce that to 2 - 3 weeks.
+(FYI I have no affiliation with aliexpress)
+</ul>
+<p style="text-align:center"><img src="./dimcardtool_files/dimcard-reader-parts-1024.jpg" height="60%"><br>
+</p><h3>WIRING</h3>
+<p> The Micro SD card module is connected to the programmer by connecting 6 
+female to female jumper wires. The wiring is pretty straight forward. I
+recommend to use the same color wires as used here for easy trouble shooting
+but you are free to choose your own colors.
+</p><ul>
+<li>connect black wire from GND to GND
+</li><li>connect green wire from MISO to MISO (misspelled MIOS)
+</li><li>connect yellow wire from CLK to CLK
+</li><li>connect orange wire from MOSI to MOSI
+</li><li>connect blue wire from CS to CS
+</li><li>connect red wire from 3.3V to 3.3V
+</li></ul>
+<p style="text-align:center"><img src="./dimcardtool_files/dimcard-reader-wiring-1024.jpg" height="60%">
+
+</p><p> to secure the micro SD card module to the programmer. You can use a cable binder, rubberband, or double sided tape or hot glue.
+I chose a non permanent method for now of using cable binder that came with a USB cable and a rubber band. 
+
+</p><p style="text-align:center"><img src="./dimcardtool_files/dimcard-reader-1024.jpg" width="80%">
+
+</p><hr>
+<h3>DISCLAIMER</h3>
+
+THIS SOFTWARE IS FREE FOR PERSONAL USE, NOT FOR SALE OR COMMERCIAL USE IN ANY
+FORM AND IS PROVIDED "AS IS" WITHOUT ANY WARANTIES. IN NO EVENT SHALL I BE 
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES
+<hr>
+</div></center></body></html>
